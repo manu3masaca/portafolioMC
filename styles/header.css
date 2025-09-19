@@ -1,11 +1,61 @@
 /* ================= css/header.css ================= -- */
 .site-header{
 background:var(--panel);
-position:sticky; top:0; z-index:10;
+position:sticky; top:0; 
+z-index:10;
 border-bottom:1px solid rgba(255,255,255,.08);
 }
-.header-inner{display:flex; align-items:center; justify-content:space-between; padding:1rem;}
-.brand{font-weight:700; font-size:1.25rem; color:var(--accent);}
-.main-nav ul{list-style:none; margin:0; padding:0; display:flex; gap:var(--gap)}
-.main-nav a{padding:.5rem .75rem; border-radius:.5rem; transition:background var(--transition);}
-.main-nav a:hover,.main-nav a:focus{background:rgba(255,255,255,.06);}
+
+.header-inner{
+    display:flex; 
+    align-items:center; 
+    justify-content:space-between; 
+    padding:1rem;
+}
+
+.brand{
+    font-weight:700; 
+    font-size:1.25rem; 
+    color:var(--accent);
+}
+
+.main-nav ul{
+    list-style:none; 
+    margin:0; 
+    padding:0; 
+    display:flex; 
+    gap:var(--gap);
+}
+
+.main-nav a{
+    padding:.5rem .75rem; 
+    border-radius:.5rem; 
+    transition:background var(--transition);
+}
+
+.main-nav a:hover,.main-nav a:focus{
+    background:rgba(17, 17, 17, 0.842);
+}
+
+@media (max-width:50rem){
+    .header-inner{
+
+        flex-direction:column; 
+        gap:0.5rem;
+    }
+
+    .main-nav ul{
+        flex-direction:column; 
+        align-items:center;
+        gap: 0.5rem;  
+    }
+
+    .site-header{
+        height: 13rem;
+    }
+
+    .brand{
+        position: absolute;
+        top: 13px;
+    }
+}

@@ -1,4 +1,16 @@
 /* ================= css/quote.css ================= */
-.quote{background:linear-gradient(135deg,var(--accent),#5b21b6); color:#fff; padding:5rem 1rem;}
-.quote h2{font-size:2rem; margin-bottom:.5rem;}
-.quote-author{font-size:1rem; opacity:.85;}
+
+/* estilos de la sección de citas */
+.quote{
+    background:linear-gradient(135deg,var(--accent),#63073a); color:#420000; padding:5rem 1rem;
+}
+
+/* estilos de los encabezados de citas */
+.quote h2{
+    font-size:2rem; margin-bottom:.5rem;
+}
+
+/* estilos de los autores de citas */
+.quote-author{
+    font-size:1rem; opacity:.85;
+}

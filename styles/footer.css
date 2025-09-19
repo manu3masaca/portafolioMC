@@ -1,6 +1,48 @@
 /* ================= css/footer.css ================= */
-.site-footer{background:#111827; padding:2rem 1rem; border-top:1px solid rgba(255,255,255,.08);}
-.footer-inner{display:flex; flex-direction:column; align-items:center; gap:1rem;}
-.site-footer nav ul{display:flex; gap:1rem; list-style:none; padding:0; margin:0;}
-.site-footer a{color:var(--muted); transition:color var(--transition);}
-.site-footer a:hover{color:var(--accent);}
+
+/* estilos del pie de página */
+.site-footer{
+    background:var(--bg); 
+    padding:2rem 1rem; 
+    border-top:1px solid rgba(255,255,255,.08);
+}
+
+/* estilos del contenedor del pie de página */
+.footer-inner{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1rem;
+}
+
+/* estilos de la navegación del pie de página */
+.site-footer nav ul{
+    display:flex;
+    gap:1rem;
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+/* estilos de los enlaces de navegación del pie de página */
+.site-footer a{
+    color:var(--muted);
+    transition:color var(--transition);
+}
+
+/* estilos del estado hover de los enlaces del pie de página */
+.site-footer a:hover{
+    color:var(--accent);
+}
+
+/* responsive */
+@media (max-width:50rem){
+    .footer-inner{
+        gap:.5rem;
+    }
+    .site-footer nav ul{
+        flex-direction:column; 
+        gap:.5rem; 
+        text-align:center;
+    }
+}

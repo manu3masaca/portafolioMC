@@ -1,7 +1,48 @@
 /* ================= css/skills.css ================= */
-.skills{background:var(--bg);}
-.skills h2{font-size:2rem; margin-bottom:1rem;}
-.skills-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(14rem,1fr)); gap:var(--gap); margin-top:2rem;}
-.skill-card{background:var(--panel); padding:2rem 1rem; border-radius:var(--radius); transition:transform var(--transition), box-shadow var(--transition);}
-.skill-card:hover{transform:translateY(-.3rem); box-shadow:0 .5rem 1rem rgba(0,0,0,.4);}
-.skill-media img{width:3rem; height:3rem; margin-bottom:1rem;}
+
+/* estilos de la sección de habilidades */
+.skills{
+    background:var(--bg);
+}
+
+/* estilos de los encabezados de habilidades */
+.skills h2{
+    font-size:2rem; 
+    margin-bottom:1rem;
+}
+
+/* estilos de la cuadrícula de habilidades */
+.skills-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));
+    gap:var(--gap);
+    margin-top:2rem;
+}
+
+/* estilos de las tarjetas de habilidades */
+.skill-card{
+    background:var(--panel);
+    padding:2rem 1rem;
+    border-radius:var(--radius);
+    transition:transform var(--transition), box-shadow var(--transition);
+}
+
+/* estilos del estado hover de las tarjetas de habilidades */
+.skill-card:hover{
+    transform:translateY(-.3rem);
+    box-shadow:0 .5rem 1rem rgba(0,0,0,.4);
+}
+
+/* estilos de los medios de las tarjetas de habilidades */
+.skill-media img{
+    width:3rem;
+    height:3rem;
+    margin-bottom:1rem;
+}
+
+/* responsivo */
+@media (max-width:50rem){
+    .skills-grid{
+    grid-template-columns:1fr;
+}
+}
