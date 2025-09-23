@@ -5,6 +5,15 @@
     background:var(--bg);
 }
 
+/* estilos del botón de GitHub */
+.boton-github:hover{
+    background:transparent;
+    font-size: 45px;
+    color:var(--text);
+    transform:scale(1.5);
+    transition:transform var(--transition);
+}
+
 /* estilos de los encabezados de proyectos */
 .projects h2{
     font-size:2rem;
@@ -14,9 +23,8 @@
 /* estilos de la cuadrícula de proyectos */
 .projects-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));
-    gap:var(--gap);
-    margin-top:2rem;
+    grid-template-columns:repeat(auto-fit,minmax(20rem,1fr));
+    margin-top: 2rem;
 }
 
 /* estilos de los elementos del proyecto */
@@ -24,15 +32,15 @@
     position:relative;
     display:block;
     overflow:hidden;
-    border-radius:var(--radius);
 }
 
 /* estilos de las imágenes del proyecto */
 .project-item img{
     display:block;
     width:100%;
-    height:auto;
+    height:100%;
     transition:transform var(--transition);
+    border-radius:var(--radius);
 }
 
 /* estilos de la superposición del proyecto */
@@ -46,7 +54,7 @@
     align-items:center;
     opacity:0;
     transition:opacity var(--transition);
-    color:#fff;
+    color:#f8c8c8;
 }
 
 /* estilos del efecto hover en la imagen del proyecto */
@@ -60,8 +68,8 @@
 }
 
 /* estilos de los nombres de proyectos */
-.cat{
-    font-size:.8rem;
+.projerct-number{
+    font-size:1rem;
     text-transform:uppercase;
     color:var(--accent-2);
 }

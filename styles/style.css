@@ -15,8 +15,8 @@
 :root{
   --bg: #580c0c;
   --panel: #2c010b;
-  --muted: #7f3f54;
-  --text: #c4607c;
+  --muted: #a4546f;
+  --text: #d16d8a;
   --accent: #9e2727;
   --accent-2: #642222;
   --radius: 1rem;
@@ -74,6 +74,13 @@ a{
 .boton-secondary{
   background:transparent; 
   border:1px solid var(--text); 
+  color:var(--text);
+}
+
+/* estilos del botón de GitHub */
+.boton-github{
+  background:transparent;
+  font-size: 45px;
   color:var(--text);
 }
 

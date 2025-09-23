@@ -24,7 +24,7 @@
 }
 
 /* estilos de enlace morado */
-.purple-link{
+.page-link{
     color:var(--accent);
     display:inline-block;
     margin-right:1rem;
@@ -32,7 +32,7 @@
 }
 
 /* estilos del estado hover de los enlaces de contacto */
-.purple-link:hover{
+.page-link:hover{
     color:var(--accent-2);
 }
 

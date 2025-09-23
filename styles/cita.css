@@ -2,15 +2,29 @@
 
 /* estilos de la sección de citas */
 .quote{
-    background:linear-gradient(135deg,var(--accent),#63073a); color:#420000; padding:5rem 1rem;
+    background:linear-gradient(135deg,var(--accent),#63073a); 
+    color:#420000; 
+    padding:5rem 6rem;
 }
 
 /* estilos de los encabezados de citas */
 .quote h2{
-    font-size:2rem; margin-bottom:.5rem;
+    font-size:2rem; 
+    margin-bottom:.5rem;
 }
 
 /* estilos de los autores de citas */
 .quote-author{
-    font-size:1rem; opacity:.85;
+    font-size:1rem; 
+    opacity:.85;
+}
+
+/* responsivo */
+@media (max-width:50rem){
+    .quote{
+        padding:3rem 2rem;
+    }
+    .quote h2{
+        font-size:1.5rem;
+    }
 }

@@ -22,7 +22,7 @@
 /* estilos de las tarjetas de habilidades */
 .skill-card{
     background:var(--panel);
-    padding:2rem 1rem;
+    padding:3rem 1rem;
     border-radius:var(--radius);
     transition:transform var(--transition), box-shadow var(--transition);
 }
@@ -35,8 +35,8 @@
 
 /* estilos de los medios de las tarjetas de habilidades */
 .skill-media img{
-    width:3rem;
-    height:3rem;
+    width:6rem;
+    height:6rem;
     margin-bottom:1rem;
 }
 
